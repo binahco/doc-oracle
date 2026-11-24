@@ -1,0 +1,24 @@
+# Manifest del consumidor. Contrato e inventario a la vez (ARCHITECTURE.md §2.1).
+week: 24
+name: doc-oracle
+core_version: 1.4.0
+
+reused_modules:
+  - llm-client
+  - schema-validate
+  - secure-base
+  - test-kit
+  - cache-ratelimit
+  - parser-io
+  - diff-engine
+
+new_surface:
+  - "afirmaciones con oráculo: formas ancladas (versión, semana, orden de consumidor, seed, span) medidas contra pyproject, CHANGELOG, manifiestos y ADRs"
+  - "segundo consumidor de diff-engine (sem. 24): hunks línea a línea entre lo que el documento dice y lo que debería decir"
+  - "la cita invalida: la narración solo puede ordenar posiciones medidas; citar una que no se midió la anula"
+  - "CHANGELOG como oráculo y no como corpus: una entrada fechada es una foto, no una afirmación sobre el presente"
+
+estimated_new_surface: 25
+
+# Presupuesto máximo de evals en USD por semana (ARCHITECTURE.md §8.1).
+eval_budget_usd: 2.0
